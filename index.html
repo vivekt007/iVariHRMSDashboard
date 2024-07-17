@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script defer src="dashboard.js"></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- boxicon link -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="media/images/Dark logo.png" alt="">
+            <!-- <p>iVari</p> -->
+        </div>
+
+        <div class="sidenav">
+            <a href="#" class="">
+                <div class="navlabel active">
+                    <img src="media/icons/dashboard-3--app-application-dashboard-home-layout-vertical-1.svg" alt="">
+                    <p>Dashboard</p>
+                </div>
+            </a>
+
+            <span>
+                <button class="dropdown-btn">
+                    <div class="navlabel">
+                        <img src="media/icons/user-multiple-group--close-geometric-human-multiple-person-up-user.svg"
+                            alt="">
+                        <p>Employee</p>
+                    </div>
+                    <img src="media/icons/DropdownWhite.svg" alt="dropdown">
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Attendance</a>
+                    <a href="#">Leave</a>
+                    <a href="#">Staff</a>
+                </div>
+            </span>
+
+            <span>
+                <button class="dropdown-btn">
+                    <div class="navlabel">
+                        <img src="media/icons/sales.svg"
+                            alt="">
+                        <p>Sales Report</p>
+                    </div>
+                    <img src="media/icons/DropdownWhite.svg" alt="dropdown">
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Sales Updates</a>
+                    <a href="#">Outreach</a>
+                </div>
+            </span>
+
+            <span>
+                <button class="dropdown-btn">
+                    <div class="navlabel">
+                        <img src="media/icons/wallet--money-payment-finance-wallet.svg" alt="">
+                        <p>Pay Rolls</p>
+                    </div>
+                    <img src="media/icons/DropdownWhite.svg" alt="dropdown">
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Salary</a>
+                    <a href="#">Incentives</a>
+                </div>
+            </span>
+
+            <span>
+                <button class="dropdown-btn">
+                    <div class="navlabel">
+                        <img src="media/icons/mail-send-envelope--envelope-email-message-unopened-sealed-close.svg"
+                            alt="">
+                        <p>Letters</p>
+                    </div>
+                    <img src="media/icons/DropdownWhite.svg" alt="dropdown">
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Confirmation Letters</a>
+                    <a href="#">Seperation Letters</a>
+                    <a href="#">Promotion Letters</a>
+                </div>
+            </span>
+
+            <a href="#">
+                <div class="navlabel">
+                    <img src="media/icons/help.svg" alt="">
+                    <p>Help requests</p>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="navlabel">
+                    <img src="media/icons/logout-1--arrow-exit-frame-leave-logout-rectangle-right-1.svg" alt="">
+                    <p>Logout</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class="profile">
+            <div class="profile-img">
+                <img src="media/images/profilePlaceholder.jpg" alt="">
+            </div>
+        </div> -->
+    </nav>
+
+    <main>
+        <div class="dashboard-container">
+            <div class="dashboardRow1">
+                <h1>Welcome to HRMS Dashboard</h1>
+            </div>
+            <div class="dashboardRow2">
+                <div class="dashboardR2Cards totalEmployees">
+                    <div class="dashboardIconContainer ">
+                        <img src="media/icons/totalEmployee.svg" alt="">
+                    </div>
+                    <h3>Total Employee</h3>
+                    <p><span>26</span></p>
+                </div>
+                <div class="dashboardR2Cards totalPresent">
+                    <div class="dashboardIconContainer ">
+                        <img src="media/icons/totalPresent.svg" alt="">
+                    </div>
+                    <h3>Total Present</h3>
+                    <p><span>24</span></p>
+                </div>
+                <div class="dashboardR2Cards totalAbsent">
+                    <div class="dashboardIconContainer ">
+                        <img src="media/icons/totalAbsent.svg" alt="">
+                    </div>
+                    <h3>Total Absent</h3>
+                    <p><span>2</span></p>
+                </div>
+                <div class="dashboardR2Cards createNewEmployee">
+                    <img src="media/icons/addNewEmployee.svg" alt="">
+                    <h3><span>Create New Employee Id</span></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
