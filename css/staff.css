@@ -14,6 +14,11 @@
     --font-family: 'Epilogue', sans-serif;
 }
 
+main{
+    overflow: hidden;
+    scrollbar-width: none;
+}
+
 .container {
     background-color: var(--plane-color);
     width: 100%;
@@ -24,7 +29,8 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    overflow-y: scroll;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .staffRow1 {
@@ -49,13 +55,17 @@
     color: var(--darkgrey-color);
 }
 
+.stafflabel{
+    overflow: hidden;
+}
+
 .employeeId {
     width: 8rem;
 }
 
 .employeeName,
 .role {
-    width: 12rem;
+    width: 11rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -68,7 +78,7 @@
 }
 
 .jobType {
-    width: 7rem;
+    width: 5rem;
 }
 
 .eamilId {
@@ -168,4 +178,6 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    overflow: scroll;
+    scrollbar-width: none;
 }
