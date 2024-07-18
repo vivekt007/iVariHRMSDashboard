@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRMS Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/attendance.css">
     <link rel="icon" href="media/images/Dark logo.png" type="image/x-icon">
     <script defer src="dashboard.js"></script>
 
@@ -18,8 +19,6 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- boxicon link -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </head>
 
@@ -33,7 +32,7 @@
         <div class="sidenav">
             <a href="index.html" class="">
                 <div class="navlabel active">
-                    <img src="media/icons/dashboard-3--app-application-dashboard-home-layout-vertical-1.svg" alt="">
+                    <img src="media/icons/dashboard-3--app-application-dashboard-home-layout-vertical.svg" alt="">
                     <p>Dashboard</p>
                 </div>
             </a>
@@ -41,7 +40,7 @@
             <span>
                 <button class="dropdown-btn">
                     <div class="navlabel">
-                        <img src="media/icons/user-multiple-group--close-geometric-human-multiple-person-up-user.svg"
+                        <img src="media/icons/user-multiple-group--close-geometric-human-multiple-person-up-user-1.svg"
                             alt="">
                         <p>Employee</p>
                     </div>
@@ -57,8 +56,7 @@
             <span>
                 <button class="dropdown-btn">
                     <div class="navlabel">
-                        <img src="media/icons/sales.svg"
-                            alt="">
+                        <img src="media/icons/sales.svg" alt="">
                         <p>Sales Report</p>
                     </div>
                     <img src="media/icons/DropdownWhite.svg" alt="dropdown">
@@ -122,35 +120,69 @@
     </nav>
 
     <main>
-        <div class="dashboard-container">
-            <div class="dashboardRow1">
-                <h1>Welcome to HRMS Dashboard</h1>
+        <div class="container">
+            <div class="attendanceRow1">
+                <h1 class="cabin">ATTENDANCE</h1>
             </div>
-            <div class="dashboardRow2">
-                <div class="dashboardR2Cards totalEmployees">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalEmployee.svg" alt="">
-                    </div>
-                    <h3>Total Employee</h3>
-                    <p><span>26</span></p>
+            <div class="attendanceRow2">
+                <div class="employeeSearch">
+                    <form action="">
+                        <input type="search" name="employeeSearch" id="employeeSearch" placeholder="Search">
+                        <img src="media/icons/search.svg" alt="">
+                    </form>
                 </div>
-                <div class="dashboardR2Cards totalPresent">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalPresent.svg" alt="">
-                    </div>
-                    <h3>Total Present</h3>
-                    <p><span>24</span></p>
+
+                <div class="filter-options">
+                    <!-- <label for="departmentFilter">Department</label> -->
+                    <select id="departmentFilter">
+                        <option value="all">All Departments</option>
+                        <option value="Sales">Sales</option>
+                        <option value="IT">IT</option>
+                    </select>
+
+                    <input type="date" name="filterDate" id="filterDate">
                 </div>
-                <div class="dashboardR2Cards totalAbsent">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalAbsent.svg" alt="">
-                    </div>
-                    <h3>Total Absent</h3>
-                    <p><span>2</span></p>
+            </div>
+            
+            <div class="attendanceRow3">
+                <div class="attendancelabelsRow">
+                    <p class="attendancelabel date">Date</p>
+                    <p class="attendancelabel employeeName">Employee Name</p>
+                    <p class="attendancelabel role">Role</p>
+                    <p class="attendancelabel jobType">Type</p>
+                    <p class="attendancelabel status">Status</p>
+                    <p class="attendancelabel punchIn">Punch In</p>
+                    <p class="attendancelabel punchout">Punch Out</p>
                 </div>
-                <div class="dashboardR2Cards createNewEmployee">
-                    <img src="media/icons/addNewEmployee.svg" alt="">
-                    <h3><span>Create New Employee Id</span></h3>
+
+                <div class="attendanceRowData">
+                    <p class="attendancelabel date">13/7</p>
+                    <p class="attendancelabel employeeName">Sagar Hiremath</p>
+                    <p class="attendancelabel role">Software Developer</p>
+                    <p class="attendancelabel jobType">Full Time</p>
+                    <p class="attendancelabel status">Present</p>
+                    <p class="attendancelabel punchIn">10:06</p>
+                    <p class="attendancelabel punchout">--</p>
+                </div>
+
+                <div class="attendanceRowData">
+                    <p class="attendancelabel date">13/7</p>
+                    <p class="attendancelabel employeeName">Harsh patil</p>
+                    <p class="attendancelabel role">Sales Consultant</p>
+                    <p class="attendancelabel jobType">Full Time</p>
+                    <p class="attendancelabel status">Absent</p>
+                    <p class="attendancelabel punchIn">--</p>
+                    <p class="attendancelabel punchout">--</p>
+                </div>
+
+                <div class="attendanceRowData">
+                    <p class="attendancelabel date">13/7</p>
+                    <p class="attendancelabel employeeName">Deepak Sharma</p>
+                    <p class="attendancelabel role">Sales Consultant</p>
+                    <p class="attendancelabel jobType">Full Time</p>
+                    <p class="attendancelabel status">Present</p>
+                    <p class="attendancelabel punchIn">10:32</p>
+                    <p class="attendancelabel punchout">03:48</p>
                 </div>
             </div>
         </div>

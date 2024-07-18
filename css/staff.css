@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #FF2626;
+    --darkRed-color: #BD1616;
+    --accent2-color: #FFE6E6;
+    --accent3-color: #9AC8CD;
+    --secondary-tint: #F3F8FF;
+    --dark-color: #050000;
+    --negative-color: #FF4E4E;
+    --darkgrey-color: #444444;
+    --lightygrey-color: #D9D9D9;
+    --textfieldgray-color: #F5F5F5;
+    --plane-color: #ffffff;
+    --border-shadow: rgba(23, 26, 31, 0.252);
+    --font-family: 'Epilogue', sans-serif;
+}
+
+.container {
+    background-color: var(--plane-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    color: var(--dark-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.staffRow1 {
+    height: fit-content;
+    width: 100%;
+}
+
+.stafflabelsRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 8px;
+    background-color: var(--lightygrey-color);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.stafflabelsRow p {
+    font-size: 14px;
+    /* width: 10rem; */
+    color: var(--darkgrey-color);
+}
+
+.employeeId {
+    width: 8rem;
+}
+
+.employeeName,
+.role {
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    /* background-color: #444444; */
+}
+
+.employeeName img{
+    width: 20px;
+}
+
+.jobType {
+    width: 7rem;
+}
+
+.eamilId {
+    width: 16rem;
+}
+
+.joined{
+    width: 6rem;
+}
+
+.mobile {
+    width: 8rem;
+}
+
+.approvallabel{
+    opacity: 0;
+}
+
+.approval{
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.approval button{
+    border: 1px solid var(--dark-color);
+    background-color: var(--plane-color);
+    padding: 4px 8px;
+    border-radius: 4px ;
+}
+
+.staffRowData {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 8px;
+    background-color: var(--plane-color);
+    width: 100%;
+    border-bottom: 1px solid var(--lightygrey-color);
+    font-size: 14px;
+
+}
+
+.staffRow2 {
+    display: flex;
+    width: 100%;
+    /* background-color: #444444; */
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.employeeSearch {
+    border: 1px solid var(--lightygrey-color);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.employeeSearch form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.employeeSearch input {
+    outline: none;
+    border: none;
+}
+
+.employeeSearch img {
+    width: 14px;
+}
+
+.filter-options select,
+.filter-options input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--lightygrey-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.filter-options option {
+    border: none;
+    outline: none;
+    color: var(--dark-color);
+    background-color: var(--plane-color);
+}
+
+.staffRow3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}

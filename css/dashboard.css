@@ -162,8 +162,9 @@ nav {
 }
 
 main {
-    font-size: 20px;
+    /* font-size: 20px; */
     /* padding: 1rem; */
+    width: 100%;
 }
 
 .dashboard-container {
@@ -207,14 +208,15 @@ main {
     width: 16px;
 }
 
-.dashboard-container h3 {
+.dashboardR2Cards h3 {
     font-size: 16px;
 }
 
-.dashboard-container p {
+.dashboardR2Cards p {
     font-size: 28px;
     color: var(--dark-color);
 }
+
 .totalEmployees,
 .totalPresent,
 .totalAbsent {
