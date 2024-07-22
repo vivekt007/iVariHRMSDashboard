@@ -82,13 +82,13 @@ main{
 }
 
 .approval{
-    width: 6rem;
+    width: 8rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.approval button{
+.approval select{
     border: 1px solid var(--dark-color);
     background-color: var(--plane-color);
     padding: 4px 8px;
