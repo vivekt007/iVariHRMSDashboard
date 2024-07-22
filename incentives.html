@@ -122,36 +122,50 @@
     </nav>
 
     <main>
-        <div class="dashboard-container">
-            <div class="dashboardRow1">
-                <h1>Welcome to HRMS Dashboard</h1>
+        <div class="container">
+            <div class="salaryRow1">
+                <h1>Incentives</h1>
             </div>
-            <div class="dashboardRow2">
-                <div class="dashboardR2Cards totalEmployees">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalEmployee.svg" alt="">
-                    </div>
-                    <h3>Total Employee</h3>
-                    <p><span>26</span></p>
+            <div class="salaryRow2">
+                <div class="employeeSearch">
+                    <form action="">
+                        <input type="search" name="employeeSearch" id="employeeSearch" placeholder="Search">
+                        <img src="media/icons/search.svg" alt="">
+                    </form>
                 </div>
-                <div class="dashboardR2Cards totalPresent">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalPresent.svg" alt="">
-                    </div>
-                    <h3>Total Present</h3>
-                    <p><span>24</span></p>
+
+                <div class="filter-options">
+                    <!-- <label for="departmentFilter">Department</label> -->
+                    <select id="departmentFilter">
+                        <option value="all">All Departments</option>
+                        <option value="Sales">Sales</option>
+                        <option value="IT">IT</option>
+                    </select>
+
+                    <select name="salaryMonths" id="salaryMonths">
+                        <option value="january">Jan</option>
+                        <option value="february">Feb</option>
+                        <option value="march">Mar</option>
+                        <option value="april">Apr</option>
+                        <option value="may">May</option>
+                        <option value="june">Jun</option>
+                        <option value="july">Jul</option>
+                        <option value="august">Aug</option>
+                        <option value="september">Sep</option>
+                        <option value="october">Oct</option>
+                        <option value="november">Nov</option>
+                        <option value="december">Dec</option>
+                    </select>
+
+                    <select name="salaryYear" id="salaryYear">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
                 </div>
-                <div class="dashboardR2Cards totalAbsent">
-                    <div class="dashboardIconContainer ">
-                        <img src="media/icons/totalAbsent.svg" alt="">
-                    </div>
-                    <h3>Total Absent</h3>
-                    <p><span>2</span></p>
-                </div>
-                <div class="dashboardR2Cards createNewEmployee">
-                    <img src="media/icons/addNewEmployee.svg" alt="">
-                    <h3><span>Create New Employee Id</span></h3>
-                </div>
+            </div>
+
+            <div class="salaryRow3">
+                
             </div>
         </div>
     </main>

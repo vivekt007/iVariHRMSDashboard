@@ -194,6 +194,26 @@ main {
     color: var(--darkgrey-color);
 }
 
+.dashboardRow2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboardR2Cards {
+    width: 15%;
+    height: 10rem;
+    border: 1px solid var(--lightygrey-color);
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .dashboardIconContainer {
     border: 1px solid var(--lightygrey-color);
     padding: 6px;
@@ -208,11 +228,11 @@ main {
     width: 16px;
 }
 
-.salaryR2Cards h3 {
+.dashboardR2Cards h3 {
     font-size: 16px;
 }
 
-.salaryR2Cards p {
+.dashboardR2Cards p {
     font-size: 28px;
     color: var(--dark-color);
 }
@@ -233,6 +253,68 @@ main {
 
 .createNewEmployee img {
     width: 24px;
+}
+
+.topScorers {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topscorerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid var(--lightygrey-color);
+    /* padding: 16px; */
+    border-radius: 8px;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.topscorerCard input[type="file"]::file-selector-button {
+    border: none;
+    background-color: #000000;
+    border-radius: 3px;
+    color: var(--plane-color);
+    padding: 8px;
+
+}
+
+.topScorerActions {
+    padding: 8px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgb(255, 255, 255));
+    /* color: #ffffff; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.top1 {
+    /* background-color: #f11f26; */
+    background: url('../media/topPerformers/Top-performer-card-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top2 {
+    /* background-color: #e9ed1b; */
+    background: url('../media/topPerformers/Top-performer-card-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top3 {
+    /* background-color: #1c95ec; */
+    background: url('../media/topPerformers/Top-performer-card-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* responsive css */
