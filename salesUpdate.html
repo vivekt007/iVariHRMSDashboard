@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRMS Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/sales.css">
     <link rel="icon" href="media/images/Dark logo.png" type="image/x-icon">
     <script defer src="dashboard.js"></script>
 
@@ -57,8 +58,7 @@
             <span>
                 <button class="dropdown-btn">
                     <div class="navlabel">
-                        <img src="media/icons/sales-filles.svg"
-                            alt="">
+                        <img src="media/icons/sales-filles.svg" alt="">
                         <p>Sales Report</p>
                     </div>
                     <img src="media/icons/DropdownWhite.svg" alt="dropdown">
@@ -122,11 +122,182 @@
     </nav>
 
     <main>
-        <div class="container">
+        <div class="sales-container">
             <div class="salesUpdateRow1">
-                <h1 class="cabin">Sales Update</h1>
+                <h1 class="cabin">SALES REPORT</h1>
             </div>
-            
+
+            <div class="salesUpdateRow2">
+                <div class="thisMonthSales">
+                    <h3>This month sales</h3>
+                    <p><span>48,65,125</span></p>
+                </div>
+                <div class="thisYearSales">
+                    <h3>This Year sales</h3>
+                    <p><span>5,36,05,165</span></p>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="salesUpdateRow3">
+                <div class="salesUpdateR3Row1">
+                    <h2>July Sales</h2>
+                </div>
+                <div class="salesUpdateR3Row2">
+                    <div class="search">
+                        <input type="search" name="searchSales" id="searchSales">
+                        <input type="button" value="Search">
+                    </div>
+                    <div class="monthFilters">
+                        <select name="monthFilter" id="monthFilter">
+                            <option value="january">Jan</option>
+                            <option value="february">Feb</option>
+                            <option value="march">Mar</option>
+                            <option value="april">Apr</option>
+                            <option value="may">May</option>
+                            <option value="june">Jun</option>
+                            <option value="july">Jul</option>
+                            <option value="august">Aug</option>
+                            <option value="sepetember">Sep</option>
+                            <option value="october">Oct</option>
+                            <option value="november">Nov</option>
+                            <option value="december">Dec</option>
+                        </select>
+                    </div>
+                    <div class="yearFilters">
+                        <select name="yearFilter" id="yearFilter">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="salesUpdateR3Row3">
+
+                    <div class="salesUpdateR3Row3Row1">
+                        <p class="salesReportLabel salesDate">Date</p>
+                        <p class="salesReportLabel salesCompany">Company name</p>
+                        <p class="salesReportLabel employeeName">Employee name</p>
+                        <p class="salesReportLabel taxableAmount">Total Taxable Amount</p>
+                        <p class="salesReportLabel approval">Approval</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="salesUpdateR3Row3Row2">
+                        <p class="salesReportDataRow salesDate"><span>27/07/2024</span></p>
+                        <p class="salesReportDataRow salesCompany"><span>Pure Nectar Aqua Technologies</span></p>
+                        <p class="salesReportDataRow employeeName"><span>Harsh Patil</span></p>
+                        <p class="salesReportDataRow taxableAmount"><span>5,28,032</span></p>
+                        <p class="salesReportDataRow approval">
+                            <select name="salesApproval" id="salesApproval">
+                                <option value="pending">Pending</option>
+                                <option value="approve">Approve</option>
+                                <option value="reject">Reject</option>
+                            </select>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </main>
 </body>

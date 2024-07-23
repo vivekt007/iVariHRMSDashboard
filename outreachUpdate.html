@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRMS Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/outReach.css">
     <link rel="icon" href="media/images/Dark logo.png" type="image/x-icon">
     <script defer src="dashboard.js"></script>
 
@@ -57,8 +58,7 @@
             <span>
                 <button class="dropdown-btn">
                     <div class="navlabel">
-                        <img src="media/icons/sales-filles.svg"
-                            alt="">
+                        <img src="media/icons/sales-filles.svg" alt="">
                         <p>Sales Report</p>
                     </div>
                     <img src="media/icons/DropdownWhite.svg" alt="dropdown">
@@ -122,11 +122,63 @@
     </nav>
 
     <main>
-        <div class="container">
+        <div class="outReach-container">
             <div class="outReachRow1">
                 <h1 class="cabin">Outreach</h1>
             </div>
-            
+
+            <div class="outReachRow2">
+                <div class="search">
+                    <input type="search" name="searchSales" id="searchSales">
+                    <input type="button" value="Search">
+                </div>
+                <div class="monthFilters">
+                    <select name="monthFilter" id="monthFilter">
+                        <option value="january">Jan</option>
+                        <option value="february">Feb</option>
+                        <option value="march">Mar</option>
+                        <option value="april">Apr</option>
+                        <option value="may">May</option>
+                        <option value="june">Jun</option>
+                        <option value="july">Jul</option>
+                        <option value="august">Aug</option>
+                        <option value="sepetember">Sep</option>
+                        <option value="october">Oct</option>
+                        <option value="november">Nov</option>
+                        <option value="december">Dec</option>
+                    </select>
+                </div>
+                <div class="yearFilters">
+                    <select name="yearFilter" id="yearFilter">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="outReachRow3">
+                <div class="outreachlabels">
+                    <p class="outReachlabel companyName">Company name</p>
+                    <p class="outReachlabel representative">Representative</p>
+                    <p class="outReachlabel outReachContact">Contact number</p>
+                    <p class="outReachlabel outReachemail">Email id</p>
+                    <p class="outReachlabel outReachLocation">Address</p>
+                    <p class="outReachlabel additional">Additional details</p>
+                </div>
+
+                <hr>
+
+                <div class="outreachdataRows">
+                    <p class="outReachdataRow companyName">Ceasefire Industries private limited</p>
+                    <p class="outReachdataRow representative">Sushant Sharma</p>
+                    <p class="outReachdataRow outReachContact">8976543201</p>
+                    <p class="outReachdataRow outReachemail">sushantsharma@gmail.com</p>
+                    <p class="outReachdataRow outReachLocation">Bengaluru, Karnataka 562162</p>
+                    <p class="outReachdataRow additional">...</p>
+                </div>
+
+            </div>
+
         </div>
     </main>
 </body>
