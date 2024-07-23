@@ -64,9 +64,16 @@ main {
     border-radius: 3px;
 }
 
+.outReachRow3{
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
 .outreachlabels {
     font-size: 14px;
     color: var(--darkgrey-color);
+    background-color: var(--lightygrey-color);
+    border-radius: 4px;
 }
 
 .outreachlabels,
@@ -74,7 +81,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 8px 4px;
+    padding: 8px;
     width: fit-content;
 }
 

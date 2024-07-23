@@ -104,6 +104,11 @@
     border-radius: 3px;
 }
 
+.salesUpdateR3Row3{
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
 .salesUpdateR3Row3 hr {
     width: 70%;
     color: var(--textfieldgray-color);
@@ -112,7 +117,7 @@
 
 .salesUpdateR3Row3Row1 {
     display: flex;
-    padding: 8px 4px;
+    padding: 8px;
     align-items: center;
     justify-content: flex-start;
     border-top-right-radius: 8px;
@@ -120,11 +125,13 @@
     font-size: 14px;
     color: var(--darkgrey-color);
     width: fit-content;
+    background-color: var(--lightygrey-color);
+    border-radius: 4px;
 }
 
 .salesUpdateR3Row3Row2 {
     display: flex;
-    padding: 8px 4px;
+    padding: 8px;
     align-items: center;
     justify-content: flex-start;
 }
