@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HRMS Dashboard</title>
     <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/salary.css">
     <link rel="icon" href="media/images/Dark logo.png" type="image/x-icon">
     <script defer src="dashboard.js"></script>
 
@@ -72,7 +71,7 @@
             <span>
                 <button class="dropdown-btn">
                     <div class="navlabel">
-                        <img src="media/icons/wallet--money-payment-finance-wallet-1.svg" alt="">
+                        <img src="media/icons/wallet--money-payment-finance-wallet.svg" alt="">
                         <p>Pay Rolls</p>
                     </div>
                     <img src="media/icons/DropdownWhite.svg" alt="dropdown">
@@ -85,7 +84,8 @@
 
             <a href="letters.html">
                 <div class="navlabel">
-                    <img src="media/icons/mail-send-envelope--envelope-email-message-unopened-sealed-close.svg" alt="">
+                    <img src="media/icons/mail-send-envelope--envelope-email-message-unopened-sealed-close-1.svg"
+                        alt="">
                     <p>Letters</p>
                 </div>
             </a>
@@ -114,71 +114,8 @@
 
     <main>
         <div class="container">
-            <div class="salaryRow1">
-                <h1>Salary</h1>
-            </div>
-            <div class="salaryRow2">
-                <div class="employeeSearch">
-                    <form action="">
-                        <input type="search" name="employeeSearch" id="employeeSearch" placeholder="Search">
-                        <img src="media/icons/search.svg" alt="">
-                    </form>
-                </div>
-
-                <div class="filter-options">
-                    <!-- <label for="departmentFilter">Department</label> -->
-                    <select id="departmentFilter">
-                        <option value="all">All Departments</option>
-                        <option value="Sales">Sales</option>
-                        <option value="IT">IT</option>
-                    </select>
-
-                    <select name="salaryMonths" id="salaryMonths">
-                        <option value="january">Jan</option>
-                        <option value="february">Feb</option>
-                        <option value="march">Mar</option>
-                        <option value="april">Apr</option>
-                        <option value="may">May</option>
-                        <option value="june">Jun</option>
-                        <option value="july">Jul</option>
-                        <option value="august">Aug</option>
-                        <option value="september">Sep</option>
-                        <option value="october">Oct</option>
-                        <option value="november">Nov</option>
-                        <option value="december">Dec</option>
-                    </select>
-
-                    <select name="salaryYear" id="salaryYear">
-                        <option value="2024">2024</option>
-                        <option value="2023">2023</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="salaryRow3">
-                <div class="salarylabelsRow">
-                    <p class="salarylabel employeeId">Employee Id</p>
-                    <p class="salarylabel employeeName">Employee Name</p>
-                    <p class="salarylabel working">Working days</p>
-                    <p class="salarylabel empLeave">Leaves</p>
-                    <div class="salarySlip">
-                        <p>Salary slip</p>
-                    </div>
-                    <!-- <p class="approvallabel">Approval</p> -->
-                </div>
-
-                <div class="salaryRowData">
-                    <p class="salarylabel employeeId">iavri@00025</p>
-                    <p class="salarylabel employeeName"><img src="media/images/profilePlaceholder.jpg"
-                            alt=""><span>Sagar
-                            Hiremath</span></p>
-                    <p class="salarylabel working">27/31</p>
-                    <p class="salarylabel empLeave">0/1.5</p>
-                    <div class="salarySlip">
-                        <input type="file" name="salarySlip" id="salarySlip" value="salarySlip">
-                    </div>
-                    <!-- <p class="approval"><button class="approval-btn">Approve</button></p> -->
-                </div>
+            <div class="lettersRow1">
+                <h1>Letters</h1>
             </div>
         </div>
     </main>

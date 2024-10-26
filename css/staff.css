@@ -1,20 +1,20 @@
 :root {
-    --primary-color: #FF2626;
-    --darkRed-color: #BD1616;
-    --accent2-color: #FFE6E6;
-    --accent3-color: #9AC8CD;
-    --secondary-tint: #F3F8FF;
+    --primary-color: #ff2626;
+    --darkRed-color: #bd1616;
+    --accent2-color: #ffe6e6;
+    --accent3-color: #9ac8cd;
+    --secondary-tint: #f3f8ff;
     --dark-color: #050000;
-    --negative-color: #FF4E4E;
+    --negative-color: #ff4e4e;
     --darkgrey-color: #444444;
-    --lightygrey-color: #D9D9D9;
-    --textfieldgray-color: #F5F5F5;
+    --lightygrey-color: #d9d9d9;
+    --textfieldgray-color: #f5f5f5;
     --plane-color: #ffffff;
     --border-shadow: rgba(23, 26, 31, 0.252);
-    --font-family: 'Epilogue', sans-serif;
+    --font-family: "Epilogue", sans-serif;
 }
 
-main{
+main {
     overflow: hidden;
     scrollbar-width: none;
 }
@@ -55,7 +55,7 @@ main{
     color: var(--darkgrey-color);
 }
 
-.stafflabel{
+.stafflabel {
     overflow: hidden;
 }
 
@@ -73,7 +73,7 @@ main{
     /* background-color: #444444; */
 }
 
-.employeeName img{
+.employeeName img {
     width: 20px;
 }
 
@@ -85,30 +85,38 @@ main{
     width: 16rem;
 }
 
-.joined{
+.joined {
     width: 6rem;
+}
+
+.department {
+    width: 6rem;
+}
+
+.empLocation {
+    width: 8rem;
 }
 
 .mobile {
     width: 8rem;
 }
 
-.approvallabel{
+.approvallabel {
     opacity: 0;
 }
 
-.approval{
+.approval {
     width: 6rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.approval button{
+.approval button {
     border: 1px solid var(--dark-color);
     background-color: var(--plane-color);
     padding: 4px 8px;
-    border-radius: 4px ;
+    border-radius: 4px;
 }
 
 .staffRowData {
@@ -121,7 +129,6 @@ main{
     width: 100%;
     border-bottom: 1px solid var(--lightygrey-color);
     font-size: 14px;
-
 }
 
 .staffRow2 {
