@@ -7,23 +7,23 @@
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     color: var(--textcolor);
-    font-family: 'Overpass';
+    font-family: "Overpass";
 }
 
 :root {
-    --primary-color: #FF2626;
-    --darkRed-color: #BD1616;
-    --accent2-color: #FFE6E6;
-    --accent3-color: #9AC8CD;
-    --secondary-tint: #F3F8FF;
+    --primary-color: #ff2626;
+    --darkRed-color: #bd1616;
+    --accent2-color: #ffe6e6;
+    --accent3-color: #9ac8cd;
+    --secondary-tint: #f3f8ff;
     --dark-color: #050000;
-    --negative-color: #FF4E4E;
+    --negative-color: #ff4e4e;
     --darkgrey-color: #444444;
-    --lightygrey-color: #D9D9D9;
-    --textfieldgray-color: #F5F5F5;
+    --lightygrey-color: #d9d9d9;
+    --textfieldgray-color: #f5f5f5;
     --plane-color: #ffffff;
     --border-shadow: rgba(23, 26, 31, 0.252);
-    --font-family: 'Epilogue', sans-serif;
+    --font-family: "Epilogue", sans-serif;
 }
 
 .cabin {
@@ -64,7 +64,7 @@ main {
     border-radius: 3px;
 }
 
-.outReachRow3{
+.outReachRow3 {
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -89,6 +89,7 @@ main {
     width: 14rem;
 }
 
+.empName,
 .representative {
     width: 12rem;
 }
